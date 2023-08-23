@@ -29,8 +29,9 @@ const Calculadora = () => {
       margin: 10,
       borderWidth: 1,
       padding: 10,
-      borderColor: 'gray',
+      borderColor: 'blue',
       borderWidth: 3,
+      backgroundColor: "white",
     },
   });
 
@@ -42,7 +43,7 @@ const Calculadora = () => {
 
       <TextInput style={estilos.inputsTexto} onChangeText={setNumero2} value={numero2} placeholder="Número 2" keyboardType="numeric" />
 
-      <Button onPress={Sumar} title="Sumar" color="#841584" />
+      <Button onPress={Sumar} title="Sumar" color="green" />
 
       {resultado>10 && (<Text>El resultado es {resultado}</Text>)}
 
